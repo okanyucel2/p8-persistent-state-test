@@ -1,0 +1,12 @@
+Upstream Tracking Auto-Setup Test
+================================
+This file tests if P0.67 auto-upstream-tracking fix works.
+
+Expected behavior:
+1. Create file
+2. Commit file
+3. Push file
+4. Backend should automatically run: git branch --set-upstream-to=origin/main main
+5. Future status checks should correctly calculate ahead/behind
+
+Test timestamp: $(date)
